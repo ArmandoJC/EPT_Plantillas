@@ -3,9 +3,9 @@ import { Box } from '@mui/system'
 import { NavBar, SideBar } from '../components';
 
 
-const drawerWidth = 280;
+const drawerWidth = 200;
 
-export const JournalLayout = ({ children }) => {
+export const PlantillasLayout = ({ children }) => {
   return (
     <Box sx={{ display: 'flex' }}>
 

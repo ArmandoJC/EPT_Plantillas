@@ -1,27 +1,32 @@
 import { Toolbar } from '@mui/material';
 import { Box } from '@mui/system'
-import { NavBar, SideBar } from '../components';
+import { NavBar, SideBar, Title } from '../components';
 
 
 const drawerWidth = 0;
 
 export const PlantillasLayout = ({ children }) => {
   return (
-    <Box sx={{ display: 'flex', backgroundColor: '#887BB0' }}>
+    <Box sx={{ backgroundColor: '#887BB0' }}>
+      <Box>
+        <NavBar drawerWidth={drawerWidth} />
+      </Box>
+      <Title />
+      <Box sx={{ display: 'flex', backgroundColor: '#887BB0' }}>
 
-        <NavBar drawerWidth={ drawerWidth } />
 
         {/* <SideBar drawerWidth={ drawerWidth } /> */}
 
-        <Box 
-            component='main'
-            sx={{ flexGrow: 1, p: 3 }}
+        <Box
+          component='main'
+          sx={{ flexGrow: 1, p: 3 }}
         >
-            <Toolbar />
+          <Toolbar />
 
-            { children }
-            
+          {children}
+
         </Box>
+      </Box>
     </Box>
   )
 }

@@ -14,7 +14,7 @@ export const PlantillasPage = () => {
       {/* <NoteView /> */}
 
 
-      <IconButton
+      {/* <IconButton
         size='large'
         sx={{
           color: 'white',
@@ -26,7 +26,7 @@ export const PlantillasPage = () => {
         }}
       >
         <AddOutlined sx={{ fontSize: 30 }} />
-      </IconButton>
+      </IconButton> */}
 
     </PlantillasLayout>
   )

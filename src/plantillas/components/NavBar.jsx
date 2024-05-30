@@ -1,5 +1,7 @@
-import { AppBar, Grid, IconButton, Toolbar, Typography, InputBase } from '@mui/material';
+import { AppBar, Grid, IconButton, Toolbar, Typography, InputBase, Button } from '@mui/material';
 import { LogoutOutlined, MenuOutlined, Search as SearchIcon } from '@mui/icons-material';
+
+import './NavBar.css';
 
 import { styled, alpha } from '@mui/material/styles';
 
@@ -48,6 +50,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 export const NavBar = ({ drawerWidth = 240 }) => {
     return (
         <AppBar
+            elevation={0}
             position='fixed'
             sx={{
                 width: { sm: `calc(100% - ${drawerWidth}px)` },
@@ -55,32 +58,15 @@ export const NavBar = ({ drawerWidth = 240 }) => {
             }}
         >
             <Toolbar>
-                <IconButton
-                    color='inherit'
-                    edge="start"
-                    sx={{ mr: 2, display: { sm: 'none' } }}
-                >
-                    <MenuOutlined />
-                </IconButton>
-
-                <Grid container direction='row' justifyContent='space-between' alignItems='center'>
-                    <Typography variant='h6' noWrap component='div'> Platillas App </Typography>
-                    <form>
-                        <Search>
-                            <SearchIconWrapper>
-                                <SearchIcon />
-                            </SearchIconWrapper>
-                            <StyledInputBase
-                                placeholder="Search…"
-                                inputProps={{ 'aria-label': 'search' }}
-                            />
-                        </Search>
-                    </form>
+                <Grid container direction='row' justifyContent='right' alignItems='center' className='bar' marginX='4rem'>
+                    <Button
+                        // key={page}
+                        // onClick={handleCloseNavMenu}
+                        sx={{ my: 2, color: 'white', display: 'block' }}
+                    >
+                        <Typography variant='h6' component='div'> INICIO </Typography>
+                    </Button>
                 </Grid>
-                <IconButton color='error'>
-                    <LogoutOutlined />
-                </IconButton>
-
             </Toolbar>
         </AppBar>
     )

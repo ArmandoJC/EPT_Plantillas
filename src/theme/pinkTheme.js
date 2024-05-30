@@ -4,7 +4,7 @@ import { red } from '@mui/material/colors';
 export const pinkTheme = createTheme({
     palette: {
         primary: {
-            main: '#DD969C'
+            main: '#887BB0'
         },
         secondary: {
             main: '#51D1F6'

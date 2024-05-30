@@ -1,0 +1,5 @@
+.bar {
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    border-image: linear-gradient(90deg, #CCFED9,#95BAFF) 1;
+}

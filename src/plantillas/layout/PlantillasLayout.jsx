@@ -3,15 +3,15 @@ import { Box } from '@mui/system'
 import { NavBar, SideBar } from '../components';
 
 
-const drawerWidth = 200;
+const drawerWidth = 0;
 
 export const PlantillasLayout = ({ children }) => {
   return (
-    <Box sx={{ display: 'flex' }}>
+    <Box sx={{ display: 'flex', backgroundColor: '#887BB0' }}>
 
         <NavBar drawerWidth={ drawerWidth } />
 
-        <SideBar drawerWidth={ drawerWidth } />
+        {/* <SideBar drawerWidth={ drawerWidth } /> */}
 
         <Box 
             component='main'

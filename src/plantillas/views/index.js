@@ -1,3 +1,3 @@
 
-export * from './NoteView';
+export * from './CardsView';
 export * from './NothingSelectedView';

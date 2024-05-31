@@ -42,7 +42,7 @@ export const SearchForm = () => {
                 
                 >
 
-                <Grid item textAlign='center' marginY={'1rem'} marginX='32rem' alignContent={'center'} flexGrow={1}>
+                <Grid item textAlign='center' marginY={'1rem'} marginX='16rem' alignContent={'center'} flexGrow={1}>
                     {/* <Typography fontSize={64} fontWeight={'bold'}> Contasheets </Typography> */}
                     <form
                     // onSubmit={ onSearchSubmit }

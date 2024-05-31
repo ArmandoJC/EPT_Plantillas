@@ -21,6 +21,8 @@ export const Input = ({ label, name, ...rest }) => {
                 endAdornment={
                     <InputAdornment position="end">
                       <IconButton
+                        type="submit"
+                        // onClick={()=>{console.log("Hola presioné el botón de submit")}}
                         // color="secondary"
                         aria-label="toggle password visibility"
                         // onClick={handleClickShowPassword}

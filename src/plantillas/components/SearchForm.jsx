@@ -7,7 +7,8 @@ import { FormikControl } from './formik/FormikControl';
 // import { HeroCard } from '../components';
 // import { getHeroesByName } from '../helpers';
 
-export const SearchForm = () => {
+export const SearchForm = ({ formData }) => {
+    const { searchText, onInputChange } = formData;
 
     //   const navigate = useNavigate();
     //   const location = useLocation();
@@ -25,12 +26,12 @@ export const SearchForm = () => {
 
 
 
-    //   const onSearchSubmit = (event) =>{
-    //     event.preventDefault();
-    //     // if ( searchText.trim().length <= 1 ) return;
-
-    //     navigate(`?q=${ searchText }`);
-    //   }
+      const onSearchSubmit = (event) =>{
+        event.preventDefault();
+        // if ( searchText.trim().length <= 1 ) return;
+        console.log("Presioné Submit")
+        // navigate(`?q=${ searchText }`);
+      }
 
 
     return (
@@ -45,7 +46,7 @@ export const SearchForm = () => {
                 <Grid item textAlign='center' marginY={'1rem'} marginX='16rem' alignContent={'center'} flexGrow={1}>
                     {/* <Typography fontSize={64} fontWeight={'bold'}> Contasheets </Typography> */}
                     <form
-                    // onSubmit={ onSearchSubmit }
+                    onSubmit={ onSearchSubmit }
                     >
                         {/* <input
                             type="text"
@@ -65,7 +66,9 @@ export const SearchForm = () => {
                                 <FormikControl
                                     control='input'
                                     // disabled
-                                    name='installationPath'
+                                    name='searchText'
+                                    value = {searchText}
+                                    onChange = { onInputChange }
                                     // error={touched.installationPath && !!errors.installationPath}
                                 />
                             </Grid>

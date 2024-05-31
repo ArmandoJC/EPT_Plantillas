@@ -1,22 +1,23 @@
 import { Card, CardActionArea, CardContent, CardMedia, Grid, Typography } from "@mui/material"
 
-export const PlantillaCard = () => {
+export const PlantillaCard = ({ plantilla }) => {
+
     return (
-        <Grid item>
-            <Card sx={{ maxWidth: 345 }}>
-                <CardActionArea target='_blank' href='https://www.canva.com/design/DAGET4VzHdc/knz-W__SQZmf5KbwQ4am6g/edit'>
+        <Grid item marginX={1} marginY={1}>
+            <Card sx={{ maxWidth: 345, maxHeight: 350 }} >
+                <CardActionArea target='_blank' href={ plantilla.link }>
                     <CardMedia
                         component="img"
                         height="200"
-                        image="/assets/image1.png"
+                        image={plantilla.imageUrl}
                         alt="green iguana"
                     />
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div" textAlign={'center'}>
-                            PLANILLA DE REMUNERACIONES
+                            { plantilla.title }
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            Cute Aesthetic Presentation
+                            { plantilla.description }
                         </Typography>
                     </CardContent>
                 </CardActionArea>

@@ -13,7 +13,7 @@ export const PlantillasLayout = ({ children }) => {
       </Box>
       <Title />
       <SearchForm />
-      <Box sx={{ display: 'flex', backgroundColor: '#887BB0' }}>
+      <Box  marginX='4rem' sx={{ display: 'flex', backgroundColor: '#887BB0' }}>
 
 
         {/* <SideBar drawerWidth={ drawerWidth } /> */}

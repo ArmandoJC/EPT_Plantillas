@@ -1,6 +1,6 @@
 import { Toolbar } from '@mui/material';
 import { Box } from '@mui/system'
-import { NavBar, SideBar, Title } from '../components';
+import { NavBar, SearchForm, SideBar, Title } from '../components';
 
 
 const drawerWidth = 0;
@@ -12,6 +12,7 @@ export const PlantillasLayout = ({ children }) => {
         <NavBar drawerWidth={drawerWidth} />
       </Box>
       <Title />
+      <SearchForm />
       <Box sx={{ display: 'flex', backgroundColor: '#887BB0' }}>
 
 
@@ -21,7 +22,7 @@ export const PlantillasLayout = ({ children }) => {
           component='main'
           sx={{ flexGrow: 1, p: 3 }}
         >
-          <Toolbar />
+          {/* <Toolbar /> */}
 
           {children}
 

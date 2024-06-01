@@ -1,11 +1,10 @@
-import { Toolbar } from '@mui/material';
 import { Box } from '@mui/system'
 import { NavBar, SearchForm, SideBar, Title } from '../components';
 
 
 const drawerWidth = 0;
 
-export const PlantillasLayout = ({ children, formData }) => {
+export const PlantillasLayout = ({ children, formData, onSearch }) => {
   console.log({formData})
   return (
     <Box sx={{ backgroundColor: '#887BB0' }}>
@@ -13,7 +12,7 @@ export const PlantillasLayout = ({ children, formData }) => {
         <NavBar drawerWidth={drawerWidth} />
       </Box>
       <Title />
-      <SearchForm formData={formData}/>
+      <SearchForm formData={formData} onSearch={onSearch}/>
       <Box  marginX='4rem' sx={{ display: 'flex', backgroundColor: '#887BB0' }}>
 
 

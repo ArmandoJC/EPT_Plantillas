@@ -4,8 +4,15 @@ export const PlantillaCard = ({ plantilla }) => {
 
     return (
         <Grid item marginX={1} marginY={1}>
-            <Card sx={{ maxWidth: 345, maxHeight: 350, /*borderRadius: '20px'*/ }}>
-                <CardActionArea target='_blank' href={ plantilla.link }>
+            <Card
+                sx={{
+                    width: 345,
+                    height: 345,
+                    borderRadius: '25px'
+                }}
+                elevation={10}
+            >
+                <CardActionArea target='_blank' href={plantilla.link}>
                     <CardMedia
                         component="img"
                         height="200"
@@ -13,19 +20,24 @@ export const PlantillaCard = ({ plantilla }) => {
                         alt="green iguana"
                         sx={{
                             borderStyle: "solid",
-                            borderWidth: '10px',
+                            borderWidth: '15px',
                             borderColor: '#8FCCD9',
-                            // borderRadius: '20px'
+                            borderTopLeftRadius: '25px',
+                            borderTopRightRadius: '25px',
                         }}
                     />
-                    <CardContent sx={{
-                        backgroundColor: '#EAC0CA'
-                    }}>
+                    <CardContent
+
+                        sx={{
+                            height: '145px',
+                            backgroundColor: '#EAC0CA'
+                        }}
+                    >
                         <Typography gutterBottom variant="h5" component="div" textAlign={'center'}>
-                            { plantilla.title }
+                            {plantilla.title}
                         </Typography>
                         <Typography variant="body2" color="text.secondary" textAlign={'center'}>
-                            { plantilla.description }
+                            {plantilla.description}
                         </Typography>
                     </CardContent>
                 </CardActionArea>

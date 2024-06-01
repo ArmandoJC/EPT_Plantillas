@@ -14,7 +14,7 @@ export const Footer = () => (
                 <ListMenuFooter description={'Sobre ContaSheets'} image={images.icon_11} />
             </ul>
         </div>
-        <div class="vl"></div>
+        <div className="vl"></div>
         <div className="app__footer__SocialMedia">
             <h2 className="app__footer-h2">Síguenos</h2>
             <ul className="app__footer__Info-links">
@@ -35,7 +35,7 @@ export const Footer = () => (
                 </li>
             </ul>
         </div>
-        <div class="vl"></div>
+        <div className="vl"></div>
         <div className="app__footer__Info-contact">
 
             <h2 className="app__footer-h2">Contáctanos</h2>

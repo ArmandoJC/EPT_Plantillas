@@ -11,7 +11,7 @@ export const PlantillasLayout = ({ children, formData, onSearch }) => {
       </Box>
       <Title />
       <SearchForm formData={formData} onSearch={onSearch} />
-      <Box marginX='4rem' sx={{ display: 'flex', backgroundColor: '#887BB0' }}>
+      <Box marginX='6rem' sx={{ display: 'flex', backgroundColor: '#887BB0' }}>
         <SideBar drawerWidth={150} />
         <Box
           component='main'

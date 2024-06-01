@@ -197,7 +197,7 @@
 
 /* ------------------------------------------------ */
 @media screen and (max-width: 360px) {
-  .message,
+  /* .message,
   .p__poppins__footer {
     font-size: 8px;
     line-height: 8px;
@@ -207,5 +207,5 @@
   }
   .app__footer__Info-links li {
     margin: 0rem 0.25rem;
-  }
+  } */
 }

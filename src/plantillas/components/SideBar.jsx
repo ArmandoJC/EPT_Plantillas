@@ -24,7 +24,6 @@ export const SideBar = ({ drawerWidth = 240 }) => {
                     </Typography>
                 </Toolbar>
                 <Divider />
-
                 <List>
                     {
                         ['PCGE', 'AFP', 'ESSALUD', 'SCRT'].map(text => (
@@ -40,16 +39,13 @@ export const SideBar = ({ drawerWidth = 240 }) => {
                                         </Grid>
                                     </ListItemButton>
                                 </ListItem>
-                                <div class="hl"></div>
+                                <div className="hl"></div>
                                 {/* <Divider /> */}
                             </Box>
-
                         ))
                     }
                 </List>
-
             </Drawer>
-
         </Box>
     )
 }

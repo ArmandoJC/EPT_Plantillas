@@ -13,20 +13,18 @@ export const PlantillasPage = () => {
   });
 
   const onSearch = (searchText) => {
-    if(searchText===''){
+    if (searchText === '') {
       return setplantillasFiltered(plantillas)
     }
-    return setplantillasFiltered([])
-    // const data = plantillas.filter((plantilla) => {
-
-    // })
-
+    const lowerCaseSearchText = searchText.toLocaleLowerCase().trim();
+    const newPlantillasFiltered = plantillas.filter((plantilla) => plantilla.title.toLocaleLowerCase().includes(lowerCaseSearchText) || plantilla.description.toLocaleLowerCase().includes(lowerCaseSearchText))
+    return setplantillasFiltered(newPlantillasFiltered)
   }
 
   return (
     <PlantillasLayout formData={formData} onSearch={onSearch}>
       {/* <NothingSelectedView /> */}
-      <CardsView plantillasFiltered={plantillasFiltered}/>
+      <CardsView plantillasFiltered={plantillasFiltered} />
     </PlantillasLayout>
   )
 }

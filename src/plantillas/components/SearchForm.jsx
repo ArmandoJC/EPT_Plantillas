@@ -28,7 +28,6 @@ export const SearchForm = ({ formData, onSearch }) => {
                                     name='searchText'
                                     value={searchText}
                                     onChange={onInputChange}
-                                // error={touched.installationPath && !!errors.installationPath}
                                 />
                             </Grid>
                         </Grid>

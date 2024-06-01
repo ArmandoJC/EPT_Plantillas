@@ -1,6 +1,5 @@
 import { Box } from '@mui/system'
-import { NavBar, SearchForm, SideBar, Title } from '../components';
-
+import { NavBar, SearchForm, Title } from '../components';
 
 const drawerWidth = 0;
 

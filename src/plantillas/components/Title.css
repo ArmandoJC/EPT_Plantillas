@@ -1,12 +1,7 @@
 .titulo {
-    
     border-radius: 40px;
-    /* background: #73AD21; */
     padding: 0rem 12rem;
     background-image: linear-gradient(90deg, #CCFED9,#95BAFF);
     color: #887BB0;
     font-weight: bolder;
-    /* font-size: '50rem'; */
-    /* width: 200px; */
-    /* height: 150px; */
 }

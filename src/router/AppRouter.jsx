@@ -1,17 +1,21 @@
 import { Route, Routes } from 'react-router-dom';
 import { AuthRoutes } from '../auth/routes/AuthRoutes';
 import { PlantillasRoutes } from '../plantillas/routes/PlantillasRoutes';
+import { Footer } from '../plantillas/components/Footer';
 
 export const AppRouter = () => {
   return (
-    <Routes>
+    <>
+      <Routes>
 
         {/* Login y Registro */}
-        <Route path="/auth/*" element={ <AuthRoutes /> } />
+        <Route path="/auth/*" element={<AuthRoutes />} />
 
         {/* PlantillasApp */}
-        <Route path="/*" element={ <PlantillasRoutes /> } />
+        <Route path="/*" element={<PlantillasRoutes />} />
 
-    </Routes>
+      </Routes>
+      <Footer />
+    </>
   )
 }

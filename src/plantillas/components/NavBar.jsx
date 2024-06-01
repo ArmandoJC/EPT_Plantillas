@@ -18,10 +18,10 @@ export const NavBar = ({ drawerWidth = 240 }) => {
                         <Box
                             component="img"
                             sx={{
-                                height: '150px',
-                                width: '150px',
-                                maxHeight: { xs: '150px', md: '100px' },
-                                maxWidth: { xs: '150px', md: '100px' },
+                                height: '108px',
+                                width: '180px',
+                                // maxHeight: { xs: '150px', md: '100px' },
+                                // maxWidth: { xs: '150px', md: '100px' },
                             }}
                             alt="contasheet logo"
                             src={images.contasheetLogo}

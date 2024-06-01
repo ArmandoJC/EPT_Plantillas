@@ -1,5 +1,5 @@
 import { PlantillasLayout } from '../layout/PlantillasLayout';
-import { CardsView, NothingSelectedView } from '../views';
+import { CardsView } from '../views';
 import { useForm } from '../../hooks/useForm';
 import { data } from '../../constants';
 import { useState } from 'react';

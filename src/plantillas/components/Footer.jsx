@@ -9,11 +9,12 @@ export const Footer = () => (
                 <img src={images.contasheetLogo} alt="app logo" />
             </div>
             <ul className="app__footer__menu-links">
-                <ListMenuFooter description={'Políticas de privacidad'} route={"/about"} />
-                <ListMenuFooter description={'Términos y condiciones'} route={"/services"} />
-                <ListMenuFooter description={'Sobre ContaSheets'} route={"/contact"} />
+                <ListMenuFooter description={'Políticas de privacidad'} image={images.icon_9} />
+                <ListMenuFooter description={'Términos y condiciones'} image={images.icon_10} />
+                <ListMenuFooter description={'Sobre ContaSheets'} image={images.icon_11} />
             </ul>
         </div>
+        <div class="vl"></div>
         <div className="app__footer__SocialMedia">
             <h2 className="app__footer-h2">Síguenos</h2>
             <ul className="app__footer__Info-links">
@@ -34,6 +35,7 @@ export const Footer = () => (
                 </li>
             </ul>
         </div>
+        <div class="vl"></div>
         <div className="app__footer__Info-contact">
 
             <h2 className="app__footer-h2">Contáctanos</h2>

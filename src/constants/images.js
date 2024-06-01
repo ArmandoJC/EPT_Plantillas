@@ -30,6 +30,9 @@ import icon_5 from "/assets/icons/ssc_icon_5.svg";
 import icon_6 from "/assets/icons/ssc_icon_6.svg";
 import icon_7 from "/assets/icons/ssc_icon_7.svg";
 import icon_8 from "/assets/icons/icon_8.svg";
+import icon_9 from "/assets/icons/icon_9.svg";
+import icon_10 from "/assets/icons/icon_10.svg";
+import icon_11 from "/assets/icons/icon_11.svg";
 
 export default {
   contasheetLogo,
@@ -64,4 +67,7 @@ export default {
   icon_6,
   icon_7,
   icon_8,
+  icon_9,
+  icon_10,
+  icon_11,
 };

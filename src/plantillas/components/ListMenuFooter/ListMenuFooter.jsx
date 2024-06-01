@@ -1,14 +1,13 @@
 import { Link } from 'react-router-dom';
-import { images } from '../../../constants'
 import './ListMenuFooter.css';
 
 
-export const ListMenuFooter = ({ description, route }) => {
+export const ListMenuFooter = ({ description, route, image }) => {
   return (
     // <li>
     <div className="listMenu__item">
       <div className="listMenu__item-logo">
-        {/* <img src={images.ssc_list_dot} alt="app logo" /> */}
+        <img src={image} alt="app logo" />
       </div>
       <div className="listMenu__description">
         <Link to={`#`}>{description}</Link>

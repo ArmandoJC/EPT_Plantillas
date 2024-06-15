@@ -2,34 +2,36 @@ import { Box, Divider, Drawer, Grid, List, ListItem, ListItemButton, ListItemIco
 import { TurnedInNot } from '@mui/icons-material';
 import './SideBar.css';
 
+import { data } from '../../constants';
+
 export const SideBar = ({ drawerWidth = 240 }) => {
     return (
         <Box
             component='nav'
             // margin={0}
             position={'fixed'}
-            sx={{ width: { sm: drawerWidth }, height: { sm: '275px' }, flexShrink: { sm: 0 }, overflow: 'hidden' }}
+            sx={{ width: { sm: drawerWidth }, height: { sm: '215px' }, flexShrink: { sm: 0 }, overflow: 'hidden' }}
         >
             <Drawer
                 variant='permanent' // temporary
                 open
                 sx={{
                     display: { xs: 'block' },
-                    '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth, height: '275px', top: '300px', backgroundColor: 'white', overflow: 'hidden', borderTopRightRadius: '20px', borderBottomRightRadius: '20px' }
+                    '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth, height: '225px', top: 'calc(129px)', backgroundColor: 'white', overflow: 'hidden', borderTopRightRadius: '20px', borderBottomRightRadius: '20px' }
                 }}
             >
                 <Toolbar>
-                    <Typography variant='h6' noWrap component='div'>
+                    <Typography variant='h6' noWrap component='div' textAlign={'center'} >
                         Menú
                     </Typography>
                 </Toolbar>
                 <Divider />
                 <List>
                     {
-                        ['PCGE', 'AFP', 'ESSALUD', 'SCRT'].map(text => (
+                        data.sideMenu.map(({ text, link }) => (
                             <Box key={text}>
                                 <ListItem sx={{ padding: '0px' }}>
-                                    <ListItemButton>
+                                    <ListItemButton href={link} target='_blank' sx={{ paddingY: '2px' }} >
                                         <ListItemIcon>
                                             <TurnedInNot />
                                         </ListItemIcon>
